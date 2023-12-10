@@ -13,7 +13,7 @@ public class Exo3_addStarToString {
         lectureClavier.close();
         
         for(int i=0; i<stringUser.length(); i++) {
-        	String charToPrint = i % 2 == 0 ? String.valueOf(stringUser.charAt(i)) : "*";
+        	char charToPrint = i % 2 == 0 ? stringUser.charAt(i) : '*';
         	System.out.print(charToPrint);
         }
 	}

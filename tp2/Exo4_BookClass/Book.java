@@ -16,4 +16,12 @@ public class Book {
 		System.out.println("Auteur : " + prenomAuteur  + " " + nomAuteur + ", Catégorie : " + categorie + ", ISBN: " + ISBN + "\n");
 	}
 	
+	public String code() {
+		//char firstChar = 
+	}
+	
+	public int getISBN() {
+		return this.ISBN;
+	}
+	
 }
