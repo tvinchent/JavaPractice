@@ -15,8 +15,9 @@ public class Bibliotheque {
     }
 
     public void listBooks() {
+    	System.out.println("Code des livres dans la bibliotheque :");
         for (Book book : bookList) {
-            System.out.println(book.getISBN());
+            System.out.println(book.code());
         }
     }
 }

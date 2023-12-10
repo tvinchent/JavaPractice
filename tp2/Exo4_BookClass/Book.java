@@ -4,9 +4,9 @@ public class Book {
 	String prenomAuteur;
 	String nomAuteur;
 	String categorie;
-	int ISBN;
+	String ISBN;
 	
-	Book(String prenomAuteurVal, String nomAuteurVal, String categorieVal, int ISBNVal){
+	Book(String prenomAuteurVal, String nomAuteurVal, String categorieVal, String ISBNVal){
 		prenomAuteur = prenomAuteurVal;
 		nomAuteur = nomAuteurVal;
 		categorie = categorieVal;
@@ -17,11 +17,7 @@ public class Book {
 	}
 	
 	public String code() {
-		//char firstChar = 
+		String code = String.valueOf(this.nomAuteur.charAt(0)) + this.nomAuteur.charAt(1) + this.prenomAuteur.charAt(0) + this.prenomAuteur.charAt(1) + this.categorie.charAt(0) + this.ISBN.charAt(this.ISBN.length()-2) + this.ISBN.charAt(this.ISBN.length()-1);
+		return code;
 	}
-	
-	public int getISBN() {
-		return this.ISBN;
-	}
-	
 }
